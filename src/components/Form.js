@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../styles/Form.css";
 import { removeJson } from "../redux/jsonSlice";
-import TypeWriterAnimation from "./TypeWriter";
 
 function Form() {
   const dispatch = useDispatch();
