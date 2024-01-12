@@ -1,6 +1,6 @@
 #form{
-    border:1px solid white; 
-    height: auto;
+    border:1px solid rgb(0, 0, 0); 
+    /* height: auto; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -9,10 +9,10 @@
     transition-duration:0.6s ;
 }
 form{
-    border:1px solid white;
+    border:1px solid rgb(0, 0, 0);
     border-radius: 10px;
-    width:55%;
-    height:auto;
+    width:65%;
+    height: auto;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -22,6 +22,9 @@ form{
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideLeft;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .form-item{
     text-align:center;
@@ -43,11 +46,11 @@ hr{
 
 .type{   
    padding:20px 0;   
-   display: inline-block;
+   display: grid;
 }
 .radio-label{
     padding:10px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     transition-duration: 0.2s;
     font-weight: 600;
@@ -55,9 +58,9 @@ hr{
 }
 
 input[type="radio"]:checked+label,.checked{
-    background-color: white;
-    border: 1px solid #121212;
-    color:#121212;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+    color:#ffffff;
 }
 .item-label{
     text-align:start;
@@ -76,7 +79,7 @@ input[type="radio"]:checked+label,.checked{
 .input{
     width:14em;
     height:1.5em;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -84,12 +87,22 @@ input[type="radio"]:checked+label,.checked{
 select{
     cursor: pointer;
 }
-.btn{
-    margin:5px 0;
+.btn1{
+    margin:5px 0px;
     padding:3px;
     font-family: 'Montserrat';
     font-weight: 600;
-    border:1px solid white;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor:pointer;
+    margin-right: -60px;
+}
+.btn2{
+    margin:5px 0px;
+    padding:3px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border:1px solid rgb(0, 0, 0);
     border-radius: 4px;
     cursor:pointer;
 }
@@ -135,7 +148,7 @@ p{
     left: 4px;
     border-radius: 50%;
     bottom: 3px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     transition: .4s;
   }
   

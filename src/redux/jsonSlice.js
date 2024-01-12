@@ -6,10 +6,13 @@ const jsonSlice=createSlice({
     reducers:{
         updateJson:(state,action)=>{
             return action.payload
+        },
+        removeJson:(state,action)=>{
+            return null;
         }
     }
 })
 
-export const {updateJson}=jsonSlice.actions;
+export const {updateJson, removeJson}=jsonSlice.actions;
 
 export default jsonSlice.reducer;
