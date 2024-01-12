@@ -20,24 +20,24 @@
     background-color: red;
     color: white;
     width: 20vw;
-    height:2.8vw;
+    height:6vh;
     border-radius: 6px;
     border: 2px solid #E8E8E8;
     font-size: medium;
-    margin-top: 5px;
+    margin-top: 1.5vh;
     cursor: pointer;
 }
 #ca{
     background-color: green;
     color: white;
     width: 20vw;
-    height:2.8vw;
+    height:6vh;
     border-radius: 6px;
     border: 2px solid #E8E8E8;
     /* margin-left: 9vw; */
     font-size: medium;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
     cursor: pointer;
 }
 
