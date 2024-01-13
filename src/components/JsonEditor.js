@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch} from "react-redux";
 import { removeJson, updateJson } from "../redux/jsonSlice";
 import "../styles/JsonEditor.css";
 
 function JsonEditor() {
   const dispatch = useDispatch();
   const [json, setJson] = useState("");
-//   const state = useSelector((state) => state);
-//   console.log(state);
 const clearHandler=()=>{
-// dispatch(deleteJson());
-// text
 setJson("");
 dispatch(removeJson());
 console.log("clearHandler");
@@ -21,8 +17,14 @@ console.log("clearHandler");
   const submitHandler = async () => {
     if (json) {
       try {
-        const data = await JSON?.parse(json);
-        dispatch(updateJson(data));
+        if(json!==undefined && json!==null){
+          const data = await JSON.parse(json);
+          if(Object.keys(data).length===0){
+            alert('INVALID JSON');
+            return 0;
+          }
+          dispatch(updateJson(data));
+        }
       } catch (err) {
         alert("Invalid JSON");
         console.log(err);
