@@ -12,7 +12,8 @@ You have to create a React application that will allow users to paste a UI schem
 
 ## UI Schema
 
-UI Schema is a JSON array in a specific format that contains all the information required to generate dynamic forms. For example, open the link below to view a UI-Schema which will render a form to create a custom pizza: 
+UI Schema is a JSON array in a specific format that contains all the information required to generate dynamic forms. For example, open the link below to view a UI-Schema which will render a form to create a custom pizza.
+
 JSON Schema:(https://drive.google.com/file/d/1RUU_ueF9BbQRLReuX88w8PWe2jsz3Z3C/view)
 Rendered Form:
 ![image](https://github.com/Parashuram-78/dynamicformcreator/assets/71225060/e50c5097-49fa-4529-95eb-9bab80365124)
